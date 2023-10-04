@@ -1,1 +1,2 @@
-a = int(input())
+a = "adwaith"
+print(a[:2])
