@@ -10,4 +10,5 @@ total = diff - length
 new = word_1[total:]
 
 check = word_2 == new
+
 print(check)
