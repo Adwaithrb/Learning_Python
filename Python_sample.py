@@ -1,11 +1,11 @@
-n = int(input())
-year = n / 365
-years_int = int(year)
-weeks = n - (years_int * 365)
-weeks_in = weeks / 7
-weeks_int = int(weeks_in)
-days = weeks_in - (weeks_int * 7)
-days_int = int(days)
-print(years_int)
-print(weeks_int)
-print(days_int)
+number = int(input())
+if number < 50:
+    charge = number * 2
+elif number < 151:
+    charge = (2 * 50) + (3 *(number - 50))
+elif number < 250:
+    charge = (2 * 50) + (3 * 100) +(5*(number - 150))
+elif number <= 250:
+    charge = (2 * 50) + (3 * 100) + (5 * 100) + (8 * (number - 250))
+surcharge = charge * 0.2
+print(float(surcharge+charge))
